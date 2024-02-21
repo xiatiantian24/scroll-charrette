@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #ffffff;
+  background-color: #232323;
+}
+
+/* Add some basic styles */
+.container {
+  padding: 24px;
+  padding-left: 200px;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+
+.block {
+  font-family: "neuzeit-grotesk", sans-serif;
+  height: 50px;
+  width: 100%;
+}
+
+#block-1 {
+  width: 50px;
+  margin: 30% auto;
+  transform: rotate(45deg);
+  background-image: linear-gradient(to bottom, #bd5670, #cb7c61, #c7a56c, #bcca94, #b8eacb);
+}
+
+#block-2 {
+  width: 15px;
+  height: 15px;
+  margin: -1% auto;
+  transform: rotate(45deg);
+  background-color: aliceblue;
+}
+
+#block-3 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, #bd5670, #cb7c61, #c7a56c, #bcca94, #b8eacb);
+}
+
+#block-4-0 {
+  width: 80%;
+  height: 50px;
+  margin: 0;
+  top: calc(50% - 25px);
+  position: fixed;
+  background-image: linear-gradient(to right, #bd5670, #cb7c61, #c7a56c, #bcca94, #b8eacb);
+}
+
+#block-4 {
+  width: 0px;
+  height: 50px;
+  margin: 0;
+  top: calc(50% - 25px);
+  position: fixed;
+  background-color: #232323;
+}
+
+#img-5 {
+  height: 120%;
+  width: 120%;
+  object-fit: cover;
+}
+
+#block-5 {
+  width: 80%;
+  height: 40%;
+  margin: 30% auto;
+  background: transparent;
+  /* border: 1px solid white; */
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.blank {
+  height: 100px;
+}
+
+#block-6 {
+  width: 80%;
+  height: 80%;
+  margin: 6% auto;
+  border: 1px solid white;
+  border-radius: 100px;
+
+}
+
+#block-7 {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #bd5670, #cb7c61, #c7a56c, #bcca94, #b8eacb);
+
+}
+
+.wrapper {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  column-gap: 40vw;
+}
+
+.flex-wrap {
+  width: 50vw;
+  height: 800px;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  left: 10vw;
+}
+
+#wrapper-7-2 {
+  position: relative;
+  transform-origin: 0 100%;
+  height: 0px;
+}
+
+#wrapper-7-1 {
+  position: relative;
+  height: 0px;
+}
+
+#block-8 {
+  width: 140px;
+  height: 40px;
+  overflow: hidden;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+}
+
+#img-8 {
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(-0px);
+}
+
+#block-9 {
+  width: 80%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  top: 50%;
+  position: absolute;
+  max-width: 80%;
+  overflow: hidden;
+}
+
+#scroll-wrap {
+  height: 2000px;
+}
+
+#block-10 {
+  position: fixed;
+  bottom: 60%;
+  left: 30%;
+}
+
+#block-11-outer,
+#block-11-inner {
+  width: 1px;
+  height: 1px;
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 1000px;
+  border: 1px solid rgb(218, 218, 218);
+  z-index: 1;
+  transform-origin: 50% 50%;
+}
+
+#block-11-inner {
+  z-index: 2;
+  border: 1px solid #232323;
+}
+
+#block-12 {
+  width: 40vw;
+  height: 8vh;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+}
+
+#img-12 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#img-13-1,
+#img-13-2 {
+  max-width: 100%;
+  height: auto;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  scale: 0.5;
+}
+
+#img-13-2 {
+  z-index: 2;
+  position: fixed;
+  left: 32.5%;
+  top: 20.8%;
+  scale: 0.5;
+}
+
+#container-13 {
+  background-color: #004AAD;
+}
+
+#container-14 {
+  position: absolute;
+  width: 80%;
+  height: 90vh;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+
+#block-15 {
+  width: 80%;
+  height: 60%;
+  margin: 10% auto;
+  background: transparent;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#img-15 {
+  filter: blur(0);
+}
+
+.sticky-wrapper {
+  height: 2000px;
+  width: 100%;
+  padding-left: 5vw;
+}
+
+.b16 {
+  position: sticky;
+  top: 10vh;
+  font-size: 298px;
+}
+
+#block-17-1,
+#block-17-2 {
+  width: 40%;
+  height: 20%;
+  margin-top: 25%;
+  margin-left: 40%;
+  background: transparent;
+  border-radius: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+#block-17-2 {
+  position: absolute;
+  background-color: #232323;
+}
+
+#img-18 {
+  max-width: 100%;
+  height: auto;
+  margin-left: 15vw;
+}
+
+
+/* animate wave */
+/* yoyo */
+
+/* draw svg */
+/* ripple effect */
+
+/* animate text */
+/* bidirectional */
+
+/* scrolling card sideways + changing color*/
+/* reveal img on scroll */
+
+/* rotation animation multiple followup */
+/* bluriness of an image? */
+
+/* count down */
+/* rotation yinyang */
+
+/* flip a card */
+/* 3 imgs loop */
+
+/* bounce left right */
+/* fumi squares */
+
+/* click to scroll */
+/* hover to scroll */
+
+/* checkerboard offset */
+
+
+/* .cards {
+	position: absolute;
+	width: 100px;
+	height: 300px;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.cards li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 18rem;
+	font-size: 2rem;
+	font-family: sans-serif;
+	background-color: #232323;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 20px;
+  border: 1px solid white;
+} */

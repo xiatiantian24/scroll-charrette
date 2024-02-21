@@ -1,0 +1,40 @@
+ul {
+  list-style: none;
+  font-weight: 400;
+  text-align: left;
+  width: 150px;
+  height: 90vh;
+  color: #aba4a5;
+  position: fixed;
+  top: 20px;
+  overflow-y: scroll;
+}
+
+a {
+  margin: 20;
+  padding: 12;
+  color: #aba4a5;
+}
+
+a:link,
+a:visited {
+  border-bottom: 1px solid #929292;
+  display: block;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eddfe2;
+  border-bottom: 1px solid #eddfe2;
+  transition: all 0.2s ease-in-out;
+}
+
+a:active, .active {
+  color: #f5d8de;
+  font-weight: 700;
+  font-style: oblique;
+}
+
+ul::-webkit-scrollbar { 
+  display: none; 
+}
