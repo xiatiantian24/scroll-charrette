@@ -1,0 +1,44 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    color: #ffffff;
+    background-color: #232323;
+  }
+  
+.container {
+  position: relative;
+  height: 100%;
+  padding: 24px;
+  padding-left: 200px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  min-height: 300px;
+  max-height: 700px;
+  height: 200%;
+  font-family: "neuzeit-grotesk", sans-serif;
+}
+
+.container::-webkit-scrollbar { 
+    display: none; 
+  }
+
+
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: aliceblue;
+  text-transform: uppercase;
+}

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
    * GSAP Plugin: https://gsap.com/docs/v3/Plugins/ScrollTrigger/
    * 
    */
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger) 
 
   /**
    * 
@@ -36,14 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
   var timeline_options = {
     scrollTrigger: {
       trigger: ".container",
-      pin: true, // uncomment this value to pin the "container" in the same spot while animating
+      // pin: true, // uncomment this value to pin the "container" in the same spot while animating
       start: "0px", // this controls starting the animation when the top of container is at the top of the screen
-      end: "+3000px", // this controls ending the animation when the bottom of container is at the bottom of the screen
-      scrub: 1, // this controls animation timing relative to scroll
+      end: "+1000px", // this controls ending the animation when the bottom of container is at the bottom of the screen
+      scrub: 0.5, // this controls animation timing relative to scroll
       // scrub: 1 // uncomment this value to delay animations
+      ease: "power1.inOut",
     },
   }
-  var timeline = gsap.timeline(timeline_options);
+  var timeline1 = gsap.timeline(timeline_options);
+  var timeline2 = gsap.timeline(timeline_options, {repeat: 5});
 
   /** 
    * Now we have a timeline that controls animations. The timeline duration is equal to the height
@@ -59,49 +61,61 @@ document.addEventListener("DOMContentLoaded", () => {
    * Here I've added an animation to scale and rotate "#block-1"
    * 
    */
-  timeline
-    .to(".flip-card-inner", {
-      transform: "rotateY(180deg)",
-    })
-
-  //   timeline
-  //   .to("#img-19", {
-  //     opacity: 0,
-  //     duration: 0.01,
-  //   }, 0)
-
-  // timeline
-  //   .to(".flip-card-back", {
-  //     transform: "rotateY(180deg)",
-  //   }, 0)
-
-
 
   /**
    *  Uncomment sections below to add other animations
    *  You will start to notice durations and timing are important. 
    *  Here is some documentation for how duration works with ScrollTrigger
     * https://gsap.com/docs/v3/Plugins/ScrollTrigger/#how-does-duration-work-with-scrub-true
-   */
-  // timeline
-  //   .to("#block-2", { 
-  //     scale: 0.3, 
-  //     rotation: -45, 
-  //   }, 0.05)
+   */ 
 
-  // timeline
-  //   .to("#block-3", { 
-  //     backgroundColor: 'pink', 
-  //   }, 0.1)
+  timeline1
+    .to("#block-21", { 
+      transform: "translateY(1400px)",
+      duration:10,
+    })
 
-  // timeline
-  //   .to("#block-4", {
-  //     height: "+=200px"
-  //   }, 2)
+    timeline1
+    .to("#block-21", { 
+      x:100,
+    },0)
 
-  // timeline
-  //   .to("#block-5", { 
-  //     backgroundColor: 'blue'
-  //   })
+    timeline1
+    .to("#block-21", { 
+      x:0,
+    },1)
 
+    timeline1
+    .to("#block-21", { 
+      x:100,
+    },2)
+
+    timeline1
+    .to("#block-21", { 
+      x:0,
+    },3)
+
+    timeline1
+    .to("#block-21", { 
+      x:100,
+    },4)
+
+    timeline1
+    .to("#block-21", { 
+      x:0,
+    },5)
+
+    // timeline2
+    // .to("#block-21", { 
+    //   transform: "translateX(100px)",
+    // })
+
+    // timeline2
+    // .to("#block-21", { 
+    //   transform: "translateX(0)",
+    // })
+
+
+
+    
 })
