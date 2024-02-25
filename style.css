@@ -5,18 +5,18 @@
 html {
   color: #ffffff;
   background-color: #232323;
+  font-family: "neuzeit-grotesk", sans-serif;
 }
 
 .container {
   padding: 24px;
   padding-left: 200px;
-  height: 100vh;
+  height: 100%;
   position: relative;
   z-index: -1;
 }
 
 .block {
-  font-family: "neuzeit-grotesk", sans-serif;
   height: 50px;
   width: 100%;
 }
@@ -363,8 +363,57 @@ top: 50%;
 
 
 /* 23: checkerboard */
-/* 25: hover to trigger */
-/* 24: click to trigger */
+#block-23 {
+  position: relative;
+  width: 76vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#img-23-1, #img-23-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+
+/* 24: hover to trigger */
+/* 25: click to trigger */
+#block-24-1, #block-24-2, #block-24-3  {
+width: 100%;
+height: 80%;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+#block-24-2, #block-24-3 {
+  display: none;
+  position: relative;
+}
+
+#hover-link, #click-link {
+  position: relative;
+  top: 0;
+  left: 50%;
+  width: fit-content;
+  padding: 20px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#block-24-3 p {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  font-size: 13px;
+  text-align: center;
+  width: 600px;
+  line-height: 200%;
+  padding-bottom: 60px;
+}
+
 
 
 

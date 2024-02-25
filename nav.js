@@ -23,8 +23,7 @@ document.getElementById('navbar').innerHTML = `
       <li><a href="21.html">21:</a></li>
       <li><a href="22.html">22:</a></li>
       <li><a href="23.html">23:</a></li>
-      <li><a href="24.html">24:</a></li>
-      <li><a href="25.html">25:</a></li>
+      <li><a href="24&25.html">24&25:</a></li>
     </ul>
           `;
 

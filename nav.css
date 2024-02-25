@@ -9,11 +9,12 @@ ul {
   top: 20px;
   overflow-y: scroll;
   z-index: 1;
+  font-size: 1rem;
 }
 
 a {
-  margin: 20;
-  padding: 12;
+  margin: 0 20;
+  padding: 6;
   color: #aba4a5;
 }
 
